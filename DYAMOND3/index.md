@@ -168,11 +168,11 @@ Project DYAMOND is working toward an intercomparison of global storm O(3 km) res
 </ol></p>
 
 #### Acknowledgements
-[E3SM]: (https://e3sm.org/)
-[SCREAM]: (link)
-[NERSC]: (https://www.nersc.gov/)
-[LLNL]: (https://www.llnl.gov/)
-[PCMDI]: (https://pcmdi.llnl.gov/index.html)
+[E3SM](https://e3sm.org/)
+[SCREAM](link)
+[NERSC](https://www.nersc.gov/)
+[LLNL](https://www.llnl.gov/)
+[PCMDI](https://pcmdi.llnl.gov/index.html)
 [DOE (RGMA, EESM)](link)
 
 ###### Document version: 21 November 2023
