@@ -165,15 +165,15 @@ Project DYAMOND is working toward an intercomparison of global storm O(3 km) res
 <p><ol>
     <li>Requests about COSP-type output?</li>
     <li>Question2</li>
-</p>
+</ol></p>
 
 #### Acknowledgements
-[E3SM]()
-[SCREAM]()
-[NERSC]()
-[LLNL]()
-[PCMDI]()
-[DOE (RGMA, EESM)]()
+[E3SM]: (https://e3sm.org/)
+[SCREAM]: (link)
+[NERSC]: (https://www.nersc.gov/)
+[LLNL]: (https://www.llnl.gov/)
+[PCMDI]: (https://pcmdi.llnl.gov/index.html)
+[DOE (RGMA, EESM)](link)
 
 ###### Document version: 21 November 2023
 [termsOfUse]: TermsOfUse/
