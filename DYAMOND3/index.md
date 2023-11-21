@@ -4,7 +4,7 @@ title: DYAMOND3 prototype Homepage
 ---
 
 # DYAMOND3 - Cess-Potter Uniform +4K Experiments
-<img src="DYAMOND3/images/AR_CA60_zoom2880x1440_starField.png" alt="SCREAM_CA60_zoom">
+<img src="images/AR_CA60_zoom2880x1440_starField.png" alt="SCREAM_CA60_zoom">
 
 ## Synopsis:
 <p>
@@ -13,15 +13,14 @@ Project DYAMOND (DYnamics of the Atmospheric general circulation Modeled On Non-
 <p>
 As part of this 3rd Phase of DYAMOND, year-long simulations will be conducted with sea surface temperatures uniformly increased by 4K. These simulations will be compared with year-long control simulations covering the same time period to explore the response of climate to warming, including climate sensitivity, radiative feedbacks, and hydrological cycle responses. These follow from Cess-Potter experiments that have routinely been conducted over the past several decades with coarse resolution models as an efficient way to diagnose key processes governing climate sensitivity without the need for long coupled model integrations. <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2014GL060347">Ringer et al. (2014)</a> and <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JD035460">Qin et al. (2022)</a> have demonstrated that such idealized simulations can effectively capture the key feedback mechanisms seen in fully coupled simulations, including cloud feedbacks at global and regional scales. Moreover, Qin et al (2022) find that atmosphere-only +4K experiments of short duration (e.g., only a single year) are sufficient for capturing this signal. This motivates the proposed experimental design described below.
 </p>
-<p>
-The goals of these simulations are to:
-<ol>
+
+### The goals of these simulations are to:
+<p><ol>
     <li>goal1</li>
     <li>goal2</li>
     <li>goal3</li>
     <li>goal4</li>
-</ol>
-</p>
+</ol></p>
 
 ## Protocol:
 <p>
@@ -48,6 +47,23 @@ Groups may have additional output that they may wish to provide, and depending o
 The following tables are placeholders for us to populate. I think we were planning to have certain fields be output at high temporal resolution while others would be less frequent, so as to not be archiving hundreds of TBs:
 </i></p>
 <p>Table 1. 3D Output(3 h interval). On model levels below 20km.
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 <table>
     <tr>
         <th>Atmosphere</th>
@@ -149,6 +165,7 @@ Project DYAMOND is working toward an intercomparison of global storm O(3 km) res
 <p><ol>
     <li>Requests about COSP-type output?</li>
     <li>Question2</li>
+</p>
 
 #### Acknowledgements
 [E3SM]()
