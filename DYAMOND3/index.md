@@ -3,7 +3,8 @@ layout: default
 title: DYAMOND3 prototype Homepage
 ---
 
-# DYAMOND3 - Cess-Potter Uniform +4K Experiments
+# DYAMOND3
+# Cess-Potter Uniform +4K Experiments
 <img src="images/AR_CA60_zoom2880x1440_starField.png" alt="SCREAM_CA60_zoom">
 
 ## Synopsis:
