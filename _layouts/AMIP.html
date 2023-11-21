@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+
+
+<head>
+
+	<script type="text/javascript" charset="utf-8" src="https://pcmdi.github.io/assets/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" href="{{site.baseurl}}/Data/media/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="{{site.baseurl}}/Data/media/css/bootstrap.mods.css"/>
+    <link rel="stylesheet" href="{{site.baseurl}}/Data/media/css/shadowbox.css"/>
+    <link rel="stylesheet" href="{{site.baseurl}}/Data/media/css/site.css"/>
+    <link rel="stylesheet" href="{{site.baseurl}}/Data/media/css/main.css"/>
+	<link rel="stylesheet" href="{{site.baseurl}}/Data/media/css/contentMenu.css"/>
+</head>
+
+
+
+	<div data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+			<div class="container">
+				<div class="row" >
+					<div class="span3" class="hidden-sm hidden-xm visible-md visible-lg" >
+						<div class="well sidebar-nav" id="myScrollspy" position="center">
+							<ul class="nav nav-list">
+								<a href="/mips/amip/"><h4>AMIP Home</h4></a>
+								<li><a href="{{site.baseurl}}/mips/amip/home/overview.html">What is AMIP?</a>
+								<li><a href="{{site.baseurl}}/mips/amip/home/modelDocumentation.html">Model Documentation</a></li>
+								<li><a href="{{site.baseurl}}/mips/amip/home/news/index.html">Project News </a></li>
+								<li><a href="/mips/amip/abstracts/abhme.html">Publication Abstracts </a></li>
+								<li class="txt-500">Experiment Specification</li>
+								<li class="indent-15"><a href="/mips/amip/SST.html">SST & Sea-Ice boundary conditions</a></li>
+								<li class="indent-15"><a href="{{site.baseurl}}/mips/amip/other.html">Other experimental specifications</a></li>
+								<li class="txt-500">Model Output</li>
+								<li class="indent-15"><a href="{{site.baseurl}}/mips/amip/OUTPUT/AMIP2/">Standard model output</a></li>
+								<li class="indent-15"><a href="{{site.baseurl}}/mips/amip/OUTPUT/WGNEDIAGS/">WGNE diagnostics</a></li>
+								<li class="indent-15"><a href="{{site.baseurl}}/mips/amip/DIAGSUBS/diagsp.html">Diagnostic Projects</a></li>
+								<li class="indent-15"><a href="{{site.baseurl}}/mips/amip/resources/resources.html">Additional Resources</a></li>
+								<li class="indent-15"><a href="{{site.baseurl}}/mips/amip/">Download AMIP Boundary Condition</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span9" id="content">
+						<div class="row-fluid">
+						{{ content }}
+						</div>
+					</div>
+				</div>
+</div>
