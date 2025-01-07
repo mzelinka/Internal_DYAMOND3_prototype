@@ -60,19 +60,19 @@ To address several of the primary goals listed above does not generally require 
 ### Tier 1. High priority
 <p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
 <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
 </style>
 
 <table>
@@ -164,7 +164,12 @@ tr:nth-child(even) {
 
 <p>Table 2. 2D output at 0.25˚ horizontal resolution.
 <table>
-<tbody>
+    <tr>
+        <th>   </th>
+        <th>Variable Long Name</th>
+        <th>Units</th>
+        <th>Temporal Resolution</th>
+    </tr>
     <tr>
         <td> 1</td>
         <td>Vertically integrated cloud ice,</td>
@@ -219,9 +224,9 @@ tr:nth-child(even) {
 <tr><td>32</td><td>500 hPa geopotential height     </td><td>m         </td><td>mon |  3hr |  1 hr</td></tr>
 <tr><td>33</td><td>Zonal momentum flux at the surface  </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
 <tr><td>34</td><td>Meridional momentum flux at the surface            </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
-</tbody>
 </table>
 </p>
+
 <p>Table 3. Output (15 min interval) on select pressure levels (200, 500, 700, and 850 hPa).
 <table>
     <tr>
