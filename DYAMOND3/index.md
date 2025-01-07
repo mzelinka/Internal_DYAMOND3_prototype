@@ -58,24 +58,23 @@ To address several of the primary goals listed above does not generally require 
 </p><br>
 
 ### Tier 1. High priority
-<p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.
+<p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
 <style>
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-
 tr:nth-child(even) {
   background-color: #dddddd;
 }
 </style>
+
 <table>
     <tr>
         <th>   </th>
@@ -161,7 +160,7 @@ tr:nth-child(even) {
         <td>mon |  3hr</td>
     </tr>
 </table>
-</p><br>
+<br>
 
 <p>Table 2. 2D output at 0.25˚ horizontal resolution.
 <table>
