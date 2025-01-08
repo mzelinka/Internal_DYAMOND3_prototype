@@ -58,23 +58,8 @@ To address several of the primary goals listed above does not generally require 
 </p><br>
 
 ### Tier 1. High priority
-<style>
-    table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    }
-    td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    }
-    tr:nth-child(even) {
-    background-color: #dddddd;
-    }
-</style>
 
-<p>Table 1: 3D Output on standard pressure levels and 0.25˚ horizontal resolution</p>
+<p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
 <table>
     <tr>
         <th>   </th>
