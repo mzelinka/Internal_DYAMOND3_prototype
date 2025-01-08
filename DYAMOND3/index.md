@@ -7,7 +7,7 @@ title: DYAMOND3 prototype Homepage
 # Cess-Potter Uniform +4K Experiments
 <img src="images/AR_CA60_zoom2880x1440_starField3.png" alt="SCREAM_CA60_zoom">
 
-## Synopsis:
+## Synopsis
 
 Anthropogenic global warming is a pressing societal concern for which accurate predictions of future climate are needed. Unfortunately, climate model projections of the future vary widely owing to uncertainty in future anthropogenic radiative forcing and from uncertainty in equilibrium climate sensitivity (ECS)  –  the steady-state change in temperature in response to a sustained doubling of atmospheric carbon dioxide.  Reducing uncertainty in ECS is an abiding goal of climate science, as many aspects of the global climate response to warming are tied to the overall response of global temperature. The root cause of uncertainty in ECS is uncertainty in radiative feedbacks that modulate the ability of the Earth to shed heat to space as it warms. Cloud feedback is the dominant component of this uncertainty because of the significant leverage that clouds have on the Earth’s energy budget, the wide diversity of cloud types in the atmosphere, and the fact that their radiative properties are controlled by both macroscale and microscale processes, most of which are crudely represented in global models. Given the resultant disagreement among global climate models in cloud feedback and ECS (which has persisted for decades and has recently grown), recent efforts have instead attempted to constrain climate sensitivity through synthesizing other lines of evidence (i.e., historical record, paleoclimate evidence, and process-level studies), with promising results. Nevertheless, numerical simulations of present and future climate at the global scale remain a unique and essential tool for climate science, not only for exploring and improving our understanding of Earth’s climate in a physically consistent framework, but also for providing information on future climate at space and time scales that are relevant to a growing spectrum of societal needs.<br/><br/>
 
@@ -17,60 +17,39 @@ The next logical step is to examine climate warming simulations with GSRMs. As p
 
 
 ### The goals of these simulations are to:
-<p><ol>
-    <li>diagnose responses (including climate sensitivity, radiative feedbacks, responses of the hydrological cycle and general circulation of the atmosphere, etc.) to warming</li>
-    <li>determine which climate responses are robust across GSRMs and which differ in important ways</li>
-    <li>decompose and evaluate model agreement in individual climate responses</li>
-    <li>compare and contrast the responses that emerge at storm resolving scales with those produced in traditional GCMs</li>
-    <li>establish a baseline response to uniform warming that can be compared to subsequent experiments with non-uniform warming to explore questions related to pattern effects in high resolution models</li>
-</ol></p>
+* diagnose responses (including climate sensitivity, radiative feedbacks, responses of the hydrological cycle and general circulation of the atmosphere, etc.) to warming
+* determine which climate responses are robust across GSRMs and which differ in important ways
+* decompose and evaluate model agreement in individual climate responses
+* compare and contrast the responses that emerge at storm resolving scales with those produced in traditional GCMs
+* establish a baseline response to uniform warming that can be compared to subsequent experiments with non-uniform warming to explore questions related to pattern effects in high resolution models
 
 
-## Protocol (markdown)
+## Protocol
 * +4K simulations should be identical to the control simulation specified in [Takasuka et al. (2024)](https://progearthplanetsci.springeropen.com/articles/10.1186/s40645-024-00668-1) in all ways except SST should be uniformly increased by 4K everywhere.
     - If a modeling group performs the simulations for a different time period, it will still be accepted even though it may complicate comparison to other models.
-    - If a modeling group can only afford to run a subset of a year, it is recommended that they avoid solstice months, given that Qin et al (2022) found systematically less agreement between atmosphere-only feedbacks derived from solstice months and the “true” feedbacks diagnosed in coupled simulations.
+    - If a modeling group can only afford to run a subset of a year, it is recommended that they avoid solstice months, given that [Qin et al. (2022)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JD035460) found systematically less agreement between atmosphere-only feedbacks derived from solstice months and the “true” feedbacks diagnosed in coupled simulations.
     - Use same land initial conditions as the control.
     
 * Participating models must have grid spacing of 5 km or less. While it is preferred that models not incorporate a parameterized representation of atmospheric deep convection, such models will not be excluded. The vertical domain should extend to well above the troposphere (25 km or higher), and at least 75 vertical levels is desired. Models should be able to represent the actual atmospheric general circulation, which requires a full representation of fine-scale physical processes (microphysics, radiation, small-scale turbulence) as well as realistic lower boundary conditions like topography.
 
-* Modeling centers are encouraged to implement the CFMIP Observation Simulator Package (COSP; <a href="https://journals.ametsoc.org/view/journals/bams/92/8/2011bams2856_1.xml">Bodas-Salcedo et al. (2011)</a>; <a href="https://gmd.copernicus.org/articles/11/77/2018/">Swales et al. (2018))</a>, which produces cloud fields that are more directly comparable to satellite observations and that can be used to detail cloud radiative feedbacks.
+* Modeling centers are encouraged to implement the CFMIP Observation Simulator Package (COSP; [Bodas-Salcedo et al. (2011)](https://journals.ametsoc.org/view/journals/bams/92/8/2011bams2856_1.xml); [Swales et al. (2018)](https://gmd.copernicus.org/articles/11/77/2018/))</a>, which produces cloud fields that are more directly comparable to satellite observations and that can be used to detail cloud radiative feedbacks.
   - Highest priority output are cloud fraction histograms produced by the ISCCP simulator and cloud fraction profiles provided by the CALIPSO simulator
   - Modeling centers may choose to write the output needed to run COSP offline if online implementation is not possible.
   
-## Protocol (html)
-<p>
-<ol>
-    <li>+4K simulations should be identical to the control simulation specified in [Takasuka et al. (2024)](https://progearthplanetsci.springeropen.com/articles/10.1186/s40645-024-00668-1) in all ways except SST should be uniformly increased by 4K everywhere.</li>
-    <ol type="a">
-    <li>If a modeling group performs the simulations for a different time period, it will still be accepted even though it may complicate comparison to other models.</li>
-    <li>If a modeling group can only afford to run a subset of a year, it is recommended that they avoid solstice months, given that Qin et al (2022) found systematically less agreement between atmosphere-only feedbacks derived from solstice months and the “true” feedbacks diagnosed in coupled simulations.</li>
-    <li>Use same land initial conditions as the control.</li>
-    </ol>
-    <li>Participating models must have grid spacing of 5 km or less. While it is preferred that models not incorporate a parameterized representation of atmospheric deep convection, such models will not be excluded. The vertical domain should extend to well above the troposphere (25 km or higher), and at least 75 vertical levels is desired. Models should be able to represent the actual atmospheric general circulation, which requires a full representation of fine-scale physical processes (microphysics, radiation, small-scale turbulence) as well as realistic lower boundary conditions like topography.</li>
-    <li>Modeling centers are encouraged to implement the CFMIP Observation Simulator Package (COSP; <a href="https://journals.ametsoc.org/view/journals/bams/92/8/2011bams2856_1.xml">Bodas-Salcedo et al. (2011)</a>; <a href="https://gmd.copernicus.org/articles/11/77/2018/">Swales et al. (2018))</a>, which produces cloud fields that are more directly comparable to satellite observations and that can be used to detail cloud radiative feedbacks.</li>
-    <ol type="a">
-    <li>Highest priority output are cloud fraction histograms produced by the ISCCP simulator and cloud fraction profiles provided by the CALIPSO simulator</li>
-    <li>Modeling centers may choose to write the output needed to run COSP offline if online implementation is not possible.</li>
-    </ol>
-</ol>
-</p>
-
 ## Model output and data policy
-<p>
-Unlike the first two phases of DYAMOND, data archiving and access - including provision of and access to input data - will be provided through NERSC. Because these Cess-Potter simulations are an order of magnitude longer than previous DYAMOND runs, and both the control and +4K runs are needed to investigate temperature-mediated changes in fields, the set of requested data must be trimmed down. Novel approaches to reducing data volume (such as coarsening output or using data compression) are welcome so long as anyone analyzing the data would be able to use the provided data.
-</p>
-<p>
-Groups should strive to conform to the specified output (in Tables 1-X). Additional output is welcome if it is needed to understand a given model and some requested output may not be well defined for some models. Participants should document the data they provide and any relevant details for understanding or using this data. In recognition of the challenges in writing output from such large simulations, conformance to the output requirements is left up to the individual groups’ best judgment.
-</p>
-<p>
-To address several of the primary goals listed above does not generally require high temporal or spatial resolution model output. For example, diagnosing and decomposing radiative feedbacks can be done using offline monthly-resolved radiative kernels at low spatial resolution corresponding to traditional GCMs. Given this, and the desire to facilitate collection of a large collection of model data to be hosted at a central location, we have identified high priority fields that are written at relatively low spatial (0.25 degree) resolution, keeping data volumes relatively small. These data are requested at both monthly and 3-hourly resolution (Tables 1-2), the latter to facilitate examining temperature-mediated changes in cloud organization, submonthly precipitation, convection, synoptic systems, tropical cyclones, etc. Several select 2D fields useful for storm tracking are additionally requested at 1-hourly resolution (Table 2). Finally, for modeling groups that have the capability, outputs from satellite simulators and higher spatio-temporal frequency fields useful for investigating the behavior of clouds in key climate regimes are requested (Table 3).
-</p>
-<p>Below, we define standard pressure levels as the 37 pressure levels from ERA5 reanalysis: 1000, 975, 950, 925, 900, 875, 850, 825, 800, 775, 750, 700, 650, 600, 550,
-334 500, 450, 400, 350, 300, 250, 225, 200, 175, 150, 125, 100, 70, 50, 30, 20, 10, 7, 5, 3, 2, and 1hPa.
-</p><br>
 
-### Tier 1. High priority
+Unlike the first two phases of DYAMOND, data archiving and access - including provision of and access to input data - will be provided through NERSC. Because these Cess-Potter simulations are an order of magnitude longer than previous DYAMOND runs, and both the control and +4K runs are needed to investigate temperature-mediated changes in fields, the set of requested data must be trimmed down. Novel approaches to reducing data volume (such as coarsening output or using data compression) are welcome so long as anyone analyzing the data would be able to use the provided data.
+
+Groups should strive to conform to the specified output (in Tables 1-2). Additional output is welcome if it is needed to understand a given model and some requested output may not be well defined for some models. Participants should document the data they provide and any relevant details for understanding or using this data. In recognition of the challenges in writing output from such large simulations, conformance to the output requirements is left up to the individual groups’ best judgment.
+
+To address several of the primary goals listed above does not generally require high temporal or spatial resolution model output. For example, diagnosing and decomposing radiative feedbacks can be done using offline monthly-resolved radiative kernels at low spatial resolution corresponding to traditional GCMs. Given this, and the desire to facilitate collection of a large collection of model data to be hosted at a central location, we have identified high priority fields that are written at relatively low spatial (0.25 degree) resolution, keeping data volumes relatively small. These data are requested at both monthly and 3-hourly resolution (Tables 1-2), the latter to facilitate examining temperature-mediated changes in cloud organization, submonthly precipitation, convection, synoptic systems, tropical cyclones, etc. Several select 2D fields useful for storm tracking are additionally requested at 1-hourly resolution (Table 2). Finally, for modeling groups that have the capability, outputs from satellite simulators and higher spatio-temporal frequency fields useful for investigating the behavior of clouds in key climate regimes are requested (Table 3).
+
+Below, we define standard pressure levels as the 37 pressure levels from ERA5 reanalysis: 1000, 975, 950, 925, 900, 875, 850, 825, 800, 775, 750, 700, 650, 600, 550,
+334 500, 450, 400, 350, 300, 250, 225, 200, 175, 150, 125, 100, 70, 50, 30, 20, 10, 7, 5, 3, 2, and 1hPa.
+
+The  0.25˚ horizontal resolution grid that we want data coarsened to is defined in the scrip grid file available at NERSC at /global/cfs/cdirs/e3sm/mapping/grids/cmip6_720x1440_scrip.20181001.nc <-- maybe we could just upload this here?
+
+### Data Request
 <style>
     table {
     font-family: arial, sans-serif;
@@ -87,208 +66,82 @@ To address several of the primary goals listed above does not generally require 
     }
 </style>
 
+Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.
+|    | Variable Long Name             | Units    | Temporal Resolution |
+| -- | ------------------------------ | -------- | ------------------- |
+| 1  | Cloud fraction                 | fraction | mon \|  3hr         |
+| 2  | Mass fraction of cloud water   | g kg−1   | mon \|  3hr         |
+| 3  | Mass fraction of rain water    | g kg−1   | mon \|  3hr         |
+| 4  | Mass fraction of graupel water | g kg−1   | mon \|  3hr         |
+| 5  | Mass fraction of snow water    | g kg−1   | mon \|  3hr         |
+| 6  | Mass fraction of cloud ice     | g kg−1   | mon \|  3hr         |
+| 7  | Relative humidity              | %        | mon \|  3hr         |
+| 8  | Specific humidity              | g kg−1   | mon \|  3hr         |
+| 9  | Temperature                    | K        | mon \|  3hr         |
+| 10 | Zonal wind velocity            | m s−1    | mon \|  3hr         |
+| 11 | Meridional wind velocity       | m s−1    | mon \|  3hr         |
+| 12 | Vertical velocity              | Pa s−1   | mon \|  3hr         |
+| 13 | Geopotential height            | m        | mon \|  3hr         |
 
-<p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
-<table>
-    <tr>
-        <th>   </th>
-        <th>Variable Long Name</th>
-        <th>Units</th>
-        <th>Temporal Resolution</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Cloud fraction</td>
-        <td>fraction</td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Mass fraction of cloud water</td>
-        <td>g kg<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Mass fraction of rain water</td>
-        <td>g kg<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Mass fraction of graupel water</td>
-        <td>g kg<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Mass fraction of snow water</td>
-        <td>g kg<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Mass fraction of cloud ice</td>
-        <td>g kg<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>Relative humidity</td>
-        <td>%</td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Specific humidity</td>
-        <td>g kg<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Temperature</td>
-        <td>K</td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Zonal wind velocity</td>
-        <td>m s<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>Meridional wind velocity</td>
-        <td>m s<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>Vertical velocity</td>
-        <td>Pa s<sup>−1</sup></td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>Geopotential height</td>
-        <td>m</td>
-        <td>mon |  3hr</td>
-    </tr>
-</table>
-<br>
+<br/>
 
-<p>Table 2. 2D output at 0.25˚ horizontal resolution.</p>
-<table>
-    <tr>
-        <th>   </th>
-        <th>Variable Long Name</th>
-        <th>Units</th>
-        <th>Temporal Resolution</th>
-    </tr>
-    <tr>
-        <td> 1</td>
-        <td>Vertically integrated cloud ice,</td>
-        <td>kg m-2</td>
-        <td>mon |  3hr</td>
-    </tr>
-    <tr>
-        <td> 2</td>
-        <td>Total cloud cover</td>
-        <td>%         </td>
-        <td>mon |  3hr        </td>
-    </tr>
-    <tr>
-        <td> 3</td>
-        <td>Vertically integrated cloud water (liquid + ice)   </td>
-        <td>kg m-2    </td>
-        <td>mon |  3hr        </td>
-    </tr>
-    <tr>
-        <td> 4</td>
-        <td>Surface upward latent heat flux </td>
-        <td>W m-2     </td>
-        <td>mon |  3hr        </td>
-    </tr>
-    <tr><td> 5</td><td>Surface upward sensible heat flux   </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td> 6</td><td>Surface (2 m) relative humidity </td><td>%         </td><td>mon |  3hr        </td></tr>
-<tr><td> 7</td><td>Surface (2 m) specific humidity </td><td>g kg-1    </td><td>mon |  3hr        </td></tr>
-<tr><td> 8</td><td>Precipitation    </td><td>kg m-2 s-1</td><td>mon |  3hr |  1 hr</td></tr>
-<tr><td> 9</td><td>Column water vapor              </td><td>kg m-2    </td><td>mon |  3hr        </td></tr>
-<tr><td>10</td><td>Surface air pressure            </td><td>Pa        </td><td>mon |  3hr        </td></tr>
-<tr><td>11</td><td>Sea level pressure              </td><td>Pa        </td><td>mon |  3hr        </td></tr>
-<tr><td>12</td><td>Surface downwelling longwave radiation             </td><td>W m-2     </td><td>mon | 3hr         </td></tr>
-<tr><td>13</td><td>Surface downwelling longwave radiation under clear-sky conditions </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td>14</td><td>Surface upwelling longwave radiation</td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td>15</td><td>TOA upwelling longwave radiation</td><td>W m-2     </td><td>mon |  3hr |  1 hr</td></tr>
-<tr><td>16</td><td>TOA upwelling longwave radiation under clear-sky conditions       </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td>17</td><td>Surface downwelling shortwave radiation            </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td>18</td><td>Surface downwelling shortwave radiation under clear-sky conditions</td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td>19</td><td>TOA downwelling shortwave radiation </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td>20</td><td>Surface upwelling shortwave radiation              </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td >21</td><td>Surface upwelling shortwave radiation under clear-sky conditions  </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td >22</td><td>TOA upwelling shortwave radiation   </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td >23</td><td>TOA upwelling shortwave radiation under clear-sky conditions      </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td >24</td><td>Surface (10 m) wind velocity    </td><td>m s-1     </td><td>mon |  3hr |  1 hr</td></tr>
-<tr><td >25</td><td>Surface (2 m) air temperature   </td><td>K         </td><td>mon |  3hr        </td></tr>
-<tr><td >26</td><td>Surface skin temperature        </td><td>K         </td><td>mon |  3hr        </td></tr>
-<tr><td >27</td><td>Surface (10 m) zonal wind velocity  </td><td>m s-1     </td><td>mon |  3hr        </td></tr>
-<tr><td>28</td><td>Surface (10 m) meridional wind velocity            </td><td>m s-1     </td><td>mon |  3hr        </td></tr>
-<tr><td>29</td><td>Integrated vapor transport (zonal)  </td><td>kg m-1 s-1</td><td>mon |  3hr |  1 hr</td></tr>
-<tr><td>30</td><td>Integrated vapor transport (meridional)            </td><td>kg m-1 s-1</td><td>mon |  3hr |  1 hr</td></tr>
-<tr><td>31</td><td>300 hPa geopotential height     </td><td>m         </td><td>mon |  3hr |  1 hr</td></tr>
-<tr><td>32</td><td>500 hPa geopotential height     </td><td>m         </td><td>mon |  3hr |  1 hr</td></tr>
-<tr><td>33</td><td>Zonal momentum flux at the surface  </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
-<tr><td>34</td><td>Meridional momentum flux at the surface            </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
-</table>
-<br>
+Table 2. 2D output at 0.25˚ horizontal resolution.
+|    | Variable Long Name                                                 | Units        | Temporal Resolution  |
+| -- | ------------------------------------------------------------------ | ------------ | -------------------- |
+| 1  | Vertically integrated cloud ice                                    | kg m−2       | mon \|  3hr          |
+| 2  | Total cloud cover                                                  | %            | mon \|  3hr          |
+| 3  | Vertically integrated cloud water (liquid + ice)                   | kg m−2       | mon \|  3hr          |
+| 4  | Surface upward latent heat flux                                    | W m\-2       | mon \|  3hr          |
+| 5  | Surface upward sensible heat flux                                  | W m\-2       | mon \|  3hr          |
+| 6  | Surface (2 m) relative humidity                                    | %            | mon \|  3hr          |
+| 7  | Surface (2 m) specific humidity                                    | g kg−1       | mon \|  3hr          |
+| 8  | Precipitation                                                      | kg m\-2 s\-1 | mon \|  3hr \|  1 hr |
+| 9  | Column water vapor                                                 | kg m\-2      | mon \|  3hr          |
+| 10 | Surface air pressure                                               | Pa           | mon \|  3hr          |
+| 11 | Sea level pressure                                                 | Pa           | mon \|  3hr          |
+| 12 | Surface downwelling longwave radiation                             | W m\-2       | mon \|  3hr          |
+| 13 | Surface downwelling longwave radiation under clear-sky conditions  | W m\-2       | mon \|  3hr          |
+| 14 | Surface upwelling longwave radiation                               | W m\-2       | mon \|  3hr          |
+| 15 | TOA upwelling longwave radiation                                   | W m\-2       | mon \|  3hr \|  1 hr |
+| 16 | TOA upwelling longwave radiation under clear-sky conditions        | W m\-2       | mon \|  3hr          |
+| 17 | Surface downwelling shortwave radiation                            | W m\-2       | mon \|  3hr          |
+| 18 | Surface downwelling shortwave radiation under clear-sky conditions | W m\-2       | mon \|  3hr          |
+| 19 | TOA downwelling shortwave radiation                                | W m\-2       | mon \|  3hr          |
+| 20 | Surface upwelling shortwave radiation                              | W m\-2       | mon \|  3hr          |
+| 21 | Surface upwelling shortwave radiation under clear-sky conditions   | W m\-2       | mon \|  3hr          |
+| 22 | TOA upwelling shortwave radiation                                  | W m\-2       | mon \|  3hr          |
+| 23 | TOA upwelling shortwave radiation under clear-sky conditions       | W m\-2       | mon \|  3hr          |
+| 24 | Surface (10 m) wind velocity                                       | m s\-1       | mon \|  3hr \|  1 hr |
+| 25 | Surface (2 m) air temperature                                      | K            | mon \|  3hr          |
+| 26 | Surface skin temperature                                           | K            | mon \|  3hr          |
+| 27 | Surface (10 m) zonal wind velocity                                 | m s\-1       | mon \|  3hr          |
+| 28 | Surface (10 m) meridional wind velocity                            | m s\-1       | mon \|  3hr          |
+| 29 | Integrated vapor transport (zonal)                                 | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
+| 30 | Integrated vapor transport (meridional)                            | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
+| 31 | 300 hPa geopotential height                                        | m            | mon \|  3hr \|  1 hr |
+| 32 | 500 hPa geopotential height                                        | m            | mon \|  3hr \|  1 hr |
+| 33 | Zonal momentum flux at the surface                                 | N m\-2       | mon \|  3hr          |
+| 34 | Meridional momentum flux at the surface                            | N m\-2       | mon \|  3hr          |
 
-<p>Table 3. Output (15 min interval) on select pressure levels (200, 500, 700, and 850 hPa).
-<table>
-    <tr>
-        <th>Atmosphere</th>
-        <th>Variable Long Name</th>
-        <th>Units</th>
-    </tr>
-    <tr>
-        <td>u</td>
-        <td>Zonal wind on model level</td>
-        <td>m s−1</td>
-    </tr>
-</table>
-<br>
+<br/>
 
-## Timeline & Next Steps
-<p>
-The project timeline is given in Table 6, this includes a couple of action items that need to take place before the simulations can be started. One is the exact specification of the output data (especially ocean), the other is the provision of the initial data. It is expected that all information and data is available by the 1st of March 2020.
-</p>
-<p>Table 6. Project winter DYAMOND atmosphere only and coupled atmosphere-ocean timeline.
-<table>
-    <tr>
-        <th>Date</th>
-        <th>Action to be completed</th>
-    </tr>
-    <tr>
-        <td>15.07.2019 </td>
-        <td>Initial protocol to be circulated</td>
-    </tr>
-</table>
-</p>
+We do not request any data on native resolution. Providing COSP simulator output (especially monthly ISCCP simulator cloud fraction histograms) is strongly encouraged from the modeling groups that have implemented it in their simulations.
 
-## Perspective
-Project DYAMOND is working toward an intercomparison of global storm O(3 km) resolving model representations of the atmospheric circulation on the decadal time scale. It will explore the ability of such models to better represent the atmospheric general circulation, and its sensitivity to surface temperature, as compared to traditional approaches, which use a statistical representation using statistical representations of major modes of convective heat transport. One pressing question is whether changes in clouds, precipitation and cloud controlling factors is similar to what has been gleaned from cruder (traditional) models of the atmospheric circulation. The coupled simulations specifically target the atmosphere-ocean interactions on the meso-scale and the impact on the general circulation, when convection and ocean eddies are resolved.
+### Additional Information
+* Globus should be used to copy data to NERSC
+* If you desire an account on NERSC to analyze the data, please contact Mark Zelinka (zelinka1@llnl.gov) and Paul Ullrich (ullrich4@llnl.gov).
 
-## Open Questions
-<p><ol>
-    <li>Requests about COSP-type output?</li>
-    <li>Question2</li>
-</ol></p>
-
-#### Acknowledgements
+### Acknowledgements
 [E3SM](https://e3sm.org/)
+
 [SCREAM](link)
+
 [NERSC](https://www.nersc.gov/)
+
 [LLNL](https://www.llnl.gov/)
+
 [PCMDI](https://pcmdi.llnl.gov/index.html)
+
 [DOE (RGMA, EESM)](link)
 
 ###### Document version: 21 November 2023
