@@ -74,7 +74,7 @@ To address several of the primary goals listed above does not generally require 
     }
 </style>
 
-<p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
+<p>Table 1: 3D Output on standard pressure levels and 0.25˚ horizontal resolution</p>
 <table>
     <tr>
         <th>   </th>
@@ -159,6 +159,7 @@ To address several of the primary goals listed above does not generally require 
         <td>m</td>
         <td>mon |  3hr</td>
     </tr>
+</table>
 <br>
 
 <p>Table 2. 2D output at 0.25˚ horizontal resolution.</p>
@@ -224,7 +225,7 @@ To address several of the primary goals listed above does not generally require 
 <tr><td>33</td><td>Zonal momentum flux at the surface  </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
 <tr><td>34</td><td>Meridional momentum flux at the surface            </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
 </table>
-</p>
+<br>
 
 <p>Table 3. Output (15 min interval) on select pressure levels (200, 500, 700, and 850 hPa).
 <table>
@@ -239,7 +240,7 @@ To address several of the primary goals listed above does not generally require 
         <td>m s−1</td>
     </tr>
 </table>
-</p>
+<br>
 
 ## Timeline & Next Steps
 <p>
