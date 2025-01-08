@@ -132,17 +132,15 @@ We do not request any data on native resolution. Providing COSP simulator output
 * If you desire an account on NERSC to analyze the data, please contact Mark Zelinka (zelinka1@llnl.gov) and Paul Ullrich (ullrich4@llnl.gov).
 
 ### Acknowledgements
-[E3SM](https://e3sm.org/)
+[The RGMA Program at DOE](https://eesm.science.energy.gov/program-area/regional-global-model-analysis)
 
-[SCREAM](link)
+[PCMDI](https://pcmdi.llnl.gov/index.html)
+
+[E3SM](https://e3sm.org/)
 
 [NERSC](https://www.nersc.gov/)
 
 [LLNL](https://www.llnl.gov/)
-
-[PCMDI](https://pcmdi.llnl.gov/index.html)
-
-[DOE (RGMA, EESM)](link)
 
 ###### Document version: 21 November 2023
 [termsOfUse]: TermsOfUse/
