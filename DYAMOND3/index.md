@@ -162,7 +162,7 @@ To address several of the primary goals listed above does not generally require 
 </table>
 <br>
 
-<p>Table 2. 2D output at 0.25˚ horizontal resolution.
+<p>Table 2. 2D output at 0.25˚ horizontal resolution.</p>
 <table>
     <tr>
         <th>   </th>
