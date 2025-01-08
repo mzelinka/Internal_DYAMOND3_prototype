@@ -74,159 +74,160 @@ To address several of the primary goals listed above does not generally require 
     }
 </style>
 
-<tbody>
-    <p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
-    <table>
-        <tr>
-            <th>   </th>
-            <th>Variable Long Name</th>
-            <th>Units</th>
-            <th>Temporal Resolution</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Cloud fraction</td>
-            <td>fraction</td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Mass fraction of cloud water</td>
-            <td>g kg<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Mass fraction of rain water</td>
-            <td>g kg<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Mass fraction of graupel water</td>
-            <td>g kg<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Mass fraction of snow water</td>
-            <td>g kg<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Mass fraction of cloud ice</td>
-            <td>g kg<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        <tr>
-            <td>7</td>
-            <td>Relative humidity</td>
-            <td>%</td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Specific humidity</td>
-            <td>g kg<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>Temperature</td>
-            <td>K</td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>Zonal wind velocity</td>
-            <td>m s<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>Meridional wind velocity</td>
-            <td>m s<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td>Vertical velocity</td>
-            <td>Pa s<sup>−1</sup></td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td>Geopotential height</td>
-            <td>m</td>
-            <td>mon |  3hr</td>
-        </tr>
-    </table>
-    <br>
-</tbody>
-    <p>Table 2. 2D output at 0.25˚ horizontal resolution.</p>
-    <table>
-        <tr>
-            <th>   </th>
-            <th>Variable Long Name</th>
-            <th>Units</th>
-            <th>Temporal Resolution</th>
-        </tr>
-        <tr>
-            <td> 1</td>
-            <td>Vertically integrated cloud ice,</td>
-            <td>kg m-2</td>
-            <td>mon |  3hr</td>
-        </tr>
-        <tr>
-            <td> 2</td>
-            <td>Total cloud cover</td>
-            <td>%         </td>
-            <td>mon |  3hr        </td>
-        </tr>
-        <tr>
-            <td> 3</td>
-            <td>Vertically integrated cloud water (liquid + ice)   </td>
-            <td>kg m-2    </td>
-            <td>mon |  3hr        </td>
-        </tr>
-        <tr>
-            <td> 4</td>
-            <td>Surface upward latent heat flux </td>
-            <td>W m-2     </td>
-            <td>mon |  3hr        </td>
-        </tr>
-        <tr><td> 5</td><td>Surface upward sensible heat flux   </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td> 6</td><td>Surface (2 m) relative humidity </td><td>%         </td><td>mon |  3hr        </td></tr>
-    <tr><td> 7</td><td>Surface (2 m) specific humidity </td><td>g kg-1    </td><td>mon |  3hr        </td></tr>
-    <tr><td> 8</td><td>Precipitation    </td><td>kg m-2 s-1</td><td>mon |  3hr |  1 hr</td></tr>
-    <tr><td> 9</td><td>Column water vapor              </td><td>kg m-2    </td><td>mon |  3hr        </td></tr>
-    <tr><td>10</td><td>Surface air pressure            </td><td>Pa        </td><td>mon |  3hr        </td></tr>
-    <tr><td>11</td><td>Sea level pressure              </td><td>Pa        </td><td>mon |  3hr        </td></tr>
-    <tr><td>12</td><td>Surface downwelling longwave radiation             </td><td>W m-2     </td><td>mon | 3hr         </td></tr>
-    <tr><td>13</td><td>Surface downwelling longwave radiation under clear-sky conditions </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td>14</td><td>Surface upwelling longwave radiation</td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td>15</td><td>TOA upwelling longwave radiation</td><td>W m-2     </td><td>mon |  3hr |  1 hr</td></tr>
-    <tr><td>16</td><td>TOA upwelling longwave radiation under clear-sky conditions       </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td>17</td><td>Surface downwelling shortwave radiation            </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td>18</td><td>Surface downwelling shortwave radiation under clear-sky conditions</td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td>19</td><td>TOA downwelling shortwave radiation </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td>20</td><td>Surface upwelling shortwave radiation              </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td >21</td><td>Surface upwelling shortwave radiation under clear-sky conditions  </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td >22</td><td>TOA upwelling shortwave radiation   </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td >23</td><td>TOA upwelling shortwave radiation under clear-sky conditions      </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td >24</td><td>Surface (10 m) wind velocity    </td><td>m s-1     </td><td>mon |  3hr |  1 hr</td></tr>
-    <tr><td >25</td><td>Surface (2 m) air temperature   </td><td>K         </td><td>mon |  3hr        </td></tr>
-    <tr><td >26</td><td>Surface skin temperature        </td><td>K         </td><td>mon |  3hr        </td></tr>
-    <tr><td >27</td><td>Surface (10 m) zonal wind velocity  </td><td>m s-1     </td><td>mon |  3hr        </td></tr>
-    <tr><td>28</td><td>Surface (10 m) meridional wind velocity            </td><td>m s-1     </td><td>mon |  3hr        </td></tr>
-    <tr><td>29</td><td>Integrated vapor transport (zonal)  </td><td>kg m-1 s-1</td><td>mon |  3hr |  1 hr</td></tr>
-    <tr><td>30</td><td>Integrated vapor transport (meridional)            </td><td>kg m-1 s-1</td><td>mon |  3hr |  1 hr</td></tr>
-    <tr><td>31</td><td>300 hPa geopotential height     </td><td>m         </td><td>mon |  3hr |  1 hr</td></tr>
-    <tr><td>32</td><td>500 hPa geopotential height     </td><td>m         </td><td>mon |  3hr |  1 hr</td></tr>
-    <tr><td>33</td><td>Zonal momentum flux at the surface  </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
-    <tr><td>34</td><td>Meridional momentum flux at the surface            </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
-    </table>
-    <br>
+
+<p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
+<table>
+    <tr>
+        <th>   </th>
+        <th>Variable Long Name</th>
+        <th>Units</th>
+        <th>Temporal Resolution</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Cloud fraction</td>
+        <td>fraction</td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Mass fraction of cloud water</td>
+        <td>g kg<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Mass fraction of rain water</td>
+        <td>g kg<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Mass fraction of graupel water</td>
+        <td>g kg<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Mass fraction of snow water</td>
+        <td>g kg<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Mass fraction of cloud ice</td>
+        <td>g kg<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Relative humidity</td>
+        <td>%</td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Specific humidity</td>
+        <td>g kg<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Temperature</td>
+        <td>K</td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Zonal wind velocity</td>
+        <td>m s<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>Meridional wind velocity</td>
+        <td>m s<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Vertical velocity</td>
+        <td>Pa s<sup>−1</sup></td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>Geopotential height</td>
+        <td>m</td>
+        <td>mon |  3hr</td>
+    </tr>
+</table>
+<br>
+
+<p>Table 2. 2D output at 0.25˚ horizontal resolution.</p>
+<table>
+    <tr>
+        <th>   </th>
+        <th>Variable Long Name</th>
+        <th>Units</th>
+        <th>Temporal Resolution</th>
+    </tr>
+    <tr>
+        <td> 1</td>
+        <td>Vertically integrated cloud ice,</td>
+        <td>kg m-2</td>
+        <td>mon |  3hr</td>
+    </tr>
+    <tr>
+        <td> 2</td>
+        <td>Total cloud cover</td>
+        <td>%         </td>
+        <td>mon |  3hr        </td>
+    </tr>
+    <tr>
+        <td> 3</td>
+        <td>Vertically integrated cloud water (liquid + ice)   </td>
+        <td>kg m-2    </td>
+        <td>mon |  3hr        </td>
+    </tr>
+    <tr>
+        <td> 4</td>
+        <td>Surface upward latent heat flux </td>
+        <td>W m-2     </td>
+        <td>mon |  3hr        </td>
+    </tr>
+    <tr><td> 5</td><td>Surface upward sensible heat flux   </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td> 6</td><td>Surface (2 m) relative humidity </td><td>%         </td><td>mon |  3hr        </td></tr>
+<tr><td> 7</td><td>Surface (2 m) specific humidity </td><td>g kg-1    </td><td>mon |  3hr        </td></tr>
+<tr><td> 8</td><td>Precipitation    </td><td>kg m-2 s-1</td><td>mon |  3hr |  1 hr</td></tr>
+<tr><td> 9</td><td>Column water vapor              </td><td>kg m-2    </td><td>mon |  3hr        </td></tr>
+<tr><td>10</td><td>Surface air pressure            </td><td>Pa        </td><td>mon |  3hr        </td></tr>
+<tr><td>11</td><td>Sea level pressure              </td><td>Pa        </td><td>mon |  3hr        </td></tr>
+<tr><td>12</td><td>Surface downwelling longwave radiation             </td><td>W m-2     </td><td>mon | 3hr         </td></tr>
+<tr><td>13</td><td>Surface downwelling longwave radiation under clear-sky conditions </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td>14</td><td>Surface upwelling longwave radiation</td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td>15</td><td>TOA upwelling longwave radiation</td><td>W m-2     </td><td>mon |  3hr |  1 hr</td></tr>
+<tr><td>16</td><td>TOA upwelling longwave radiation under clear-sky conditions       </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td>17</td><td>Surface downwelling shortwave radiation            </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td>18</td><td>Surface downwelling shortwave radiation under clear-sky conditions</td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td>19</td><td>TOA downwelling shortwave radiation </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td>20</td><td>Surface upwelling shortwave radiation              </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td >21</td><td>Surface upwelling shortwave radiation under clear-sky conditions  </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td >22</td><td>TOA upwelling shortwave radiation   </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td >23</td><td>TOA upwelling shortwave radiation under clear-sky conditions      </td><td>W m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td >24</td><td>Surface (10 m) wind velocity    </td><td>m s-1     </td><td>mon |  3hr |  1 hr</td></tr>
+<tr><td >25</td><td>Surface (2 m) air temperature   </td><td>K         </td><td>mon |  3hr        </td></tr>
+<tr><td >26</td><td>Surface skin temperature        </td><td>K         </td><td>mon |  3hr        </td></tr>
+<tr><td >27</td><td>Surface (10 m) zonal wind velocity  </td><td>m s-1     </td><td>mon |  3hr        </td></tr>
+<tr><td>28</td><td>Surface (10 m) meridional wind velocity            </td><td>m s-1     </td><td>mon |  3hr        </td></tr>
+<tr><td>29</td><td>Integrated vapor transport (zonal)  </td><td>kg m-1 s-1</td><td>mon |  3hr |  1 hr</td></tr>
+<tr><td>30</td><td>Integrated vapor transport (meridional)            </td><td>kg m-1 s-1</td><td>mon |  3hr |  1 hr</td></tr>
+<tr><td>31</td><td>300 hPa geopotential height     </td><td>m         </td><td>mon |  3hr |  1 hr</td></tr>
+<tr><td>32</td><td>500 hPa geopotential height     </td><td>m         </td><td>mon |  3hr |  1 hr</td></tr>
+<tr><td>33</td><td>Zonal momentum flux at the surface  </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
+<tr><td>34</td><td>Meridional momentum flux at the surface            </td><td>N m-2     </td><td>mon |  3hr        </td></tr>
+</table>
+<br>
 
 <p>Table 3. Output (15 min interval) on select pressure levels (200, 500, 700, and 850 hPa).
 <table>
