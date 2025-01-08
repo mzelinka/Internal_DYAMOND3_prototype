@@ -58,7 +58,6 @@ To address several of the primary goals listed above does not generally require 
 </p><br>
 
 ### Tier 1. High priority
-<p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
 <style>
     table {
     font-family: arial, sans-serif;
@@ -75,6 +74,7 @@ To address several of the primary goals listed above does not generally require 
     }
 </style>
 
+<p>Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.</p>
 <table>
     <tr>
         <th>   </th>
