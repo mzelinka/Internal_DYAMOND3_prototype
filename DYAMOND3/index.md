@@ -67,6 +67,7 @@ The  0.25˚ horizontal resolution grid that we want data coarsened to is defined
 </style>
 
 Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.
+
 |    | Variable Long Name             | Units    | Temporal Resolution |
 | -- | ------------------------------ | -------- | ------------------- |
 | 1  | Cloud fraction                 | fraction | mon \|  3hr         |
@@ -86,6 +87,7 @@ Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.
 <br/>
 
 Table 2. 2D output at 0.25˚ horizontal resolution.
+
 |    | Variable Long Name                                                 | Units        | Temporal Resolution  |
 | -- | ------------------------------------------------------------------ | ------------ | -------------------- |
 | 1  | Vertically integrated cloud ice                                    | kg m−2       | mon \|  3hr          |
