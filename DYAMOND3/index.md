@@ -21,8 +21,7 @@ The next logical step is to examine climate warming simulations with GSRMs. As p
 * determine which climate responses are robust across GSRMs and which differ in important ways
 * decompose and evaluate model agreement in individual climate responses
 * compare and contrast the responses that emerge at storm resolving scales with those produced in traditional GCMs
-* establish a baseline response to uniform warming that can be compared to subsequent experiments with non-uniform warming to explore questions related to pattern effects in high resolution models
-
+* establish a baseline response to uniform warming that can be compared to subsequent experiments with non-uniform warming to explore questions related to pattern effects in high resolution models<br/><br/>
 
 ## Protocol
 * +4K simulations should be identical to the control simulation specified in [Takasuka et al. (2024)](https://progearthplanetsci.springeropen.com/articles/10.1186/s40645-024-00668-1) in all ways except SST should be uniformly increased by 4K everywhere.
@@ -32,22 +31,21 @@ The next logical step is to examine climate warming simulations with GSRMs. As p
     
 * Participating models must have grid spacing of 5 km or less. While it is preferred that models not incorporate a parameterized representation of atmospheric deep convection, such models will not be excluded. The vertical domain should extend to well above the troposphere (25 km or higher), and at least 75 vertical levels is desired. Models should be able to represent the actual atmospheric general circulation, which requires a full representation of fine-scale physical processes (microphysics, radiation, small-scale turbulence) as well as realistic lower boundary conditions like topography.
 
-* Modeling centers are encouraged to implement the CFMIP Observation Simulator Package (COSP; [Bodas-Salcedo et al. (2011)](https://journals.ametsoc.org/view/journals/bams/92/8/2011bams2856_1.xml); [Swales et al. (2018)](https://gmd.copernicus.org/articles/11/77/2018/))</a>, which produces cloud fields that are more directly comparable to satellite observations and that can be used to detail cloud radiative feedbacks.
+* Modeling centers are encouraged to implement the CFMIP Observation Simulator Package (COSP; [Bodas-Salcedo et al. (2011)](https://journals.ametsoc.org/view/journals/bams/92/8/2011bams2856_1.xml); [Swales et al. (2018)](https://gmd.copernicus.org/articles/11/77/2018/)), which produces cloud fields that are more directly comparable to satellite observations and that can be used to detail cloud radiative feedbacks.
   - Highest priority output are cloud fraction histograms produced by the ISCCP simulator and cloud fraction profiles provided by the CALIPSO simulator
-  - Modeling centers may choose to write the output needed to run COSP offline if online implementation is not possible.
+  - Modeling centers may choose to write the output needed to run COSP offline if online implementation is not possible.<br/><br/>
   
 ## Model output and data policy
 
-Unlike the first two phases of DYAMOND, data archiving and access - including provision of and access to input data - will be provided through NERSC. Because these Cess-Potter simulations are an order of magnitude longer than previous DYAMOND runs, and both the control and +4K runs are needed to investigate temperature-mediated changes in fields, the set of requested data must be trimmed down. Novel approaches to reducing data volume (such as coarsening output or using data compression) are welcome so long as anyone analyzing the data would be able to use the provided data.
+Unlike the first two phases of DYAMOND, data archiving and access - including provision of and access to input data - will be provided through the National Energy Research Scientific Computing Center ([NERSC](https://www.nersc.gov/)). Because these Cess-Potter simulations are an order of magnitude longer than previous DYAMOND runs, and both the control and +4K runs are needed to investigate temperature-mediated changes in fields, the set of requested data must be trimmed down. Novel approaches to reducing data volume (such as coarsening output or using data compression) are welcome so long as anyone analyzing the data would be able to use the provided data.
 
 Groups should strive to conform to the specified output (in Tables 1-2). Additional output is welcome if it is needed to understand a given model and some requested output may not be well defined for some models. Participants should document the data they provide and any relevant details for understanding or using this data. In recognition of the challenges in writing output from such large simulations, conformance to the output requirements is left up to the individual groups’ best judgment.
 
-To address several of the primary goals listed above does not generally require high temporal or spatial resolution model output. For example, diagnosing and decomposing radiative feedbacks can be done using offline monthly-resolved radiative kernels at low spatial resolution corresponding to traditional GCMs. Given this, and the desire to facilitate collection of a large collection of model data to be hosted at a central location, we have identified high priority fields that are written at relatively low spatial (0.25 degree) resolution, keeping data volumes relatively small. These data are requested at both monthly and 3-hourly resolution (Tables 1-2), the latter to facilitate examining temperature-mediated changes in cloud organization, submonthly precipitation, convection, synoptic systems, tropical cyclones, etc. Several select 2D fields useful for storm tracking are additionally requested at 1-hourly resolution (Table 2). Finally, for modeling groups that have the capability, outputs from satellite simulators and higher spatio-temporal frequency fields useful for investigating the behavior of clouds in key climate regimes are requested (Table 3).
+To address several of the primary goals listed above does not generally require high temporal or spatial resolution model output. For example, diagnosing and decomposing radiative feedbacks can be done using offline monthly-resolved radiative kernels at low spatial resolution corresponding to traditional GCMs. Given this, and the desire to facilitate collection of a large collection of model data to be hosted at a central location, we have identified high priority fields that are written at relatively low spatial (0.25 degree) resolution, keeping data volumes relatively small. These data are requested at both monthly and 3-hourly resolution (Tables 1-2), the latter to facilitate examining temperature-mediated changes in cloud organization, submonthly precipitation, convection, synoptic systems, tropical cyclones, etc. Several select 2D fields useful for storm tracking are additionally requested at 1-hourly resolution (Table 2). 
 
-Below, we define standard pressure levels as the 37 pressure levels from ERA5 reanalysis: 1000, 975, 950, 925, 900, 875, 850, 825, 800, 775, 750, 700, 650, 600, 550,
-334 500, 450, 400, 350, 300, 250, 225, 200, 175, 150, 125, 100, 70, 50, 30, 20, 10, 7, 5, 3, 2, and 1hPa.
+Below, we define standard pressure levels as the 37 pressure levels from ERA5 reanalysis: 1000, 975, 950, 925, 900, 875, 850, 825, 800, 775, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 225, 200, 175, 150, 125, 100, 70, 50, 30, 20, 10, 7, 5, 3, 2, and 1hPa.
 
-The  0.25˚ horizontal resolution grid that we want data coarsened to is defined in the scrip grid file available at NERSC at /global/cfs/cdirs/e3sm/mapping/grids/cmip6_720x1440_scrip.20181001.nc <-- maybe we could just upload this here?
+The  0.25˚ horizontal resolution grid to which data should be coarsened is defined in [this scrip grid file](https://web.lcrc.anl.gov/public/e3sm/mapping/grids/cmip6_720x1440_scrip.20181001.nc).<br/><br/>
 
 ### Data Request
 <style>
@@ -127,22 +125,39 @@ Table 2. 2D output at 0.25˚ horizontal resolution.
 
 <br/>
 
-We do not request any data on native resolution. Providing COSP simulator output (especially monthly ISCCP simulator cloud fraction histograms) is strongly encouraged from the modeling groups that have implemented it in their simulations.
+We do not request any data on native resolution. Providing COSP simulator output (especially monthly ISCCP simulator cloud fraction histograms) is strongly encouraged from the modeling groups that have implemented it in their simulations.<br/><br/>
 
 ### Additional Information
-* Globus should be used to copy data to NERSC
-* If you desire an account on NERSC to analyze the data, please contact Mark Zelinka (zelinka1@llnl.gov) and Paul Ullrich (ullrich4@llnl.gov).
+* Globus should be used to copy data to NERSC. See instuctions at [this location](https://docs.nersc.gov/services/globus/).
+* To set up an account on NERSC to analyze the data, please contact [Mark Zelinka](mailto:zelinka1@llnl.gov) and [Paul Ullrich](mailto:ullrich4@llnl.gov).<br/><br/>
 
 ### Acknowledgements
-[The RGMA Program at DOE](https://eesm.science.energy.gov/program-area/regional-global-model-analysis)
+This work is sponsored by the Regional and Global Model Analysis ([RGMA](https://climatemodeling.science.energy.gov/program/regional-global-model-analysis)) program of the Earth and Environmental Systems Sciences Division ([EESSD](https://science.osti.gov/ber/Research/eessd)) in the Office of Biological and Environmental Research ([BER](https://science.osti.gov/ber)) within the Department of Energy's ([DOE](https://www.energy.gov/)) Office of Science ([OS](https://science.osti.gov/)). The work at PCMDI is performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
 
-[PCMDI](https://pcmdi.llnl.gov/index.html)
+<p>
+    <img src="https://pcmdi.github.io/assets/DOE/480px-DOE_Seal_Color.png"
+         width="65"
+         style="margin-right: 30px"
+         title="United States Department of Energy"
+         alt="United States Department of Energy"
+    >&nbsp;
+    <img src="https://pcmdi.github.io/assets/LLNL/212px-LLNLiconPMS286-WHITEBACKGROUND.png"
+         width="65"
+         style="margin-right: 30px"
+         title="Lawrence Livermore National Laboratory"
+         alt="Lawrence Livermore National Laboratory"
+    >&nbsp;
+    <img src="https://pcmdi.github.io/assets/PCMDI/100px-PCMDI-Logo-NoText-square-png8.png"
+         width="65"
+         style="margin-right: 30px"
+         title="Program for Climate Model Diagnosis and Intercomparison"
+         alt="Program for Climate Model Diagnosis and Intercomparison"
+    >&nbsp;
+</p>
 
-[E3SM](https://e3sm.org/)
+Need to add logos for:
+[E3SM](https://e3sm.org/) 
+[NERSC](https://www.nersc.gov/)<br/><br/>
 
-[NERSC](https://www.nersc.gov/)
-
-[LLNL](https://www.llnl.gov/)
-
-###### Document version: 21 November 2023
+###### Document version: 9 January 2025
 [termsOfUse]: TermsOfUse/
