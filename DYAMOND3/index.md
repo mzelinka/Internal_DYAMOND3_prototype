@@ -13,7 +13,7 @@ Anthropogenic global warming is a pressing societal concern for which accurate p
 
 In this context, the latest generation of high resolution (<5k km horizontal grid spacing) global storm-resolving models (GSRMs) serves as a potential game changer. This is because they explicitly simulate more small-scale processes, thereby requiring fewer subgrid-scale parameterizations than their coarse-resolution counterparts, with the anticipation that this will allow them to simulate climate more reliably. Indeed, GSRMs have been shown to simulate cloud and precipitation characteristics with much greater fidelity than coarse resolution models ([Caldwell et al 2021](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021MS002544)), and explicitly simulate impactful weather events like tropical cyclones and mesoscale convective systems that cannot be resolved by coarse resolution models ([Judt et al 2021](https://www.jstage.jst.go.jp/article/jmsj/99/3/99_2021-029/_html/-char/en); [Feng et al 2018](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018MS001305)). Despite these improvements, they still struggle with simulating clouds that are formed from sub-kilometer-scale motions or that depend sensitively on representation of cloud microphysics, which remain unresolved. The DYAMOND (DYnamics of the Atmospheric general circulation Modeled On Non-hydrostatic Domains) Project was established to facilitate intercomparison of GSRM representations of the atmospheric circulation at timescales of weeks to decades and to explore the ability of such models to better represent the atmospheric general circulation relative to traditional global climate models. The [first](https://www.esiwace.eu/the-project/past-phases/dyamond-initiative/services-dyamond-summer) and [second](https://www.esiwace.eu/the-project/past-phases/dyamond-initiative/services-dyamond-winter) phases of DYAMOND were successful in uniting and invigorating a growing community of global storm-resolving modelers to simulate and examine 40-day simulation campaigns in northern-hemisphere summer and winter seasons (respectively).<br/><br/>
 
-The next logical step is to examine climate warming simulations with GSRMs. As part of this 3rd Phase of DYAMOND, a pair of year-long “AMIP-style” prescribed SST/SIC simulations will be conducted. The first is the control climate experiment already described in [Takasuka et al. (2024)](https://progearthplanetsci.springeropen.com/articles/10.1186/s40645-024-00668-1). The second is identical to this control experiment, except with sea surface temperatures uniformly increased by 4K everywhere. This pair of simulations will be used to explore the response of climate to warming and follow from Cess-Potter experiments that have routinely been conducted over the past several decades with coarse resolution models as an efficient way to diagnose key processes governing climate sensitivity without the need for long coupled model integrations. [Ringer et al. (2014)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2014GL060347) and [Qin et al. (2022)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JD035460) have demonstrated that such idealized simulations can effectively capture the key feedback mechanisms seen in fully coupled simulations, including cloud feedbacks at global and regional scales. Moreover, [Qin et al. (2022)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JD035460) find that atmosphere-only +4K experiments of short duration (e.g., only a single year) are sufficient for capturing this signal. This motivates the proposed experimental design described below.<br/><br/>
+The next logical step is to examine climate warming simulations with GSRMs. As part of this 3rd Phase of DYAMOND, a pair of year-long “AMIP-style” prescribed SST/SIC simulations will be conducted. The first is the control climate experiment already described in [Takasuka et al. (2024)](https://progearthplanetsci.springeropen.com/articles/10.1186/s40645-024-00668-1). The second is identical to this control experiment, except with sea surface temperatures uniformly increased by 4K everywhere. This pair of simulations will be used to explore the response of climate to warming and follow from the [Cess and Potter (1988)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JD093id07p08305) experiments that have routinely been conducted over the past several decades with coarse resolution models as an efficient way to diagnose key processes governing climate sensitivity without the need for long coupled model integrations. [Ringer et al. (2014)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2014GL060347) and [Qin et al. (2022)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JD035460) have demonstrated that such idealized simulations can effectively capture the key feedback mechanisms seen in fully coupled simulations, including cloud feedbacks at global and regional scales. Moreover, [Qin et al. (2022)](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021JD035460) find that atmosphere-only +4K experiments of short duration (e.g., only a single year) are sufficient for capturing this signal. This motivates the proposed experimental design described below.<br/><br/>
 
 
 ### The goals of these simulations are to:
@@ -31,7 +31,7 @@ The next logical step is to examine climate warming simulations with GSRMs. As p
     
 * Participating models must have grid spacing of 5 km or less. While it is preferred that models not incorporate a parameterized representation of atmospheric deep convection, such models will not be excluded. The vertical domain should extend to well above the troposphere (25 km or higher), and at least 75 vertical levels is desired. Models should be able to represent the actual atmospheric general circulation, which requires a full representation of fine-scale physical processes (microphysics, radiation, small-scale turbulence) as well as realistic lower boundary conditions like topography.
 
-* Modeling centers are encouraged to implement the CFMIP Observation Simulator Package (COSP; [Bodas-Salcedo et al. (2011)](https://journals.ametsoc.org/view/journals/bams/92/8/2011bams2856_1.xml); [Swales et al. (2018)](https://gmd.copernicus.org/articles/11/77/2018/)), which produces cloud fields that are more directly comparable to satellite observations and that can be used to detail cloud radiative feedbacks.
+* Modeling centers are encouraged to implement the CFMIP Observation Simulator Package ([COSP](https://www.cfmip.org/tools-and-data/cosp)), which produces cloud fields that are more directly comparable to satellite observations and that can be used to detail cloud radiative feedbacks.
   - Highest priority output are cloud fraction histograms produced by the ISCCP simulator and cloud fraction profiles provided by the CALIPSO simulator
   - Modeling centers may choose to write the output needed to run COSP offline if online implementation is not possible.<br/><br/>
   
@@ -77,8 +77,8 @@ Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.
 | 7  | Relative humidity              | %        | mon \|  3hr         |
 | 8  | Specific humidity              | g kg−1   | mon \|  3hr         |
 | 9  | Temperature                    | K        | mon \|  3hr         |
-| 10 | Zonal wind velocity            | m s−1    | mon \|  3hr         |
-| 11 | Meridional wind velocity       | m s−1    | mon \|  3hr         |
+| 10 | Zonal wind speed               | m s−1    | mon \|  3hr         |
+| 11 | Meridional wind speed          | m s−1    | mon \|  3hr         |
 | 12 | Vertical velocity              | Pa s−1   | mon \|  3hr         |
 | 13 | Geopotential height            | m        | mon \|  3hr         |
 
@@ -88,44 +88,44 @@ Table 2. 2D output at 0.25˚ horizontal resolution.
 
 |    | Variable Long Name                                                 | Units        | Temporal Resolution  |
 | -- | ------------------------------------------------------------------ | ------------ | -------------------- |
-| 1  | Vertically integrated cloud ice                                    | kg m−2       | mon \|  3hr          |
-| 2  | Total cloud cover                                                  | %            | mon \|  3hr          |
-| 3  | Vertically integrated cloud water (liquid + ice)                   | kg m−2       | mon \|  3hr          |
+| 1  | Total cloud cover                                                  | %            | mon \|  3hr          |
+| 2  | Vertically integrated liquid water                                 | kg m−2       | mon \|  3hr          |
+| 3  | Vertically integrated ice water                                    | kg m−2       | mon \|  3hr          |
 | 4  | Surface upward latent heat flux                                    | W m\-2       | mon \|  3hr          |
 | 5  | Surface upward sensible heat flux                                  | W m\-2       | mon \|  3hr          |
-| 6  | Surface (2 m) relative humidity                                    | %            | mon \|  3hr          |
-| 7  | Surface (2 m) specific humidity                                    | g kg−1       | mon \|  3hr          |
-| 8  | Precipitation                                                      | kg m\-2 s\-1 | mon \|  3hr \|  1 hr |
-| 9  | Column water vapor                                                 | kg m\-2      | mon \|  3hr          |
-| 10 | Surface air pressure                                               | Pa           | mon \|  3hr          |
-| 11 | Sea level pressure                                                 | Pa           | mon \|  3hr          |
-| 12 | Surface downwelling longwave radiation                             | W m\-2       | mon \|  3hr          |
-| 13 | Surface downwelling longwave radiation under clear-sky conditions  | W m\-2       | mon \|  3hr          |
-| 14 | Surface upwelling longwave radiation                               | W m\-2       | mon \|  3hr          |
-| 15 | TOA upwelling longwave radiation                                   | W m\-2       | mon \|  3hr \|  1 hr |
-| 16 | TOA upwelling longwave radiation under clear-sky conditions        | W m\-2       | mon \|  3hr          |
-| 17 | Surface downwelling shortwave radiation                            | W m\-2       | mon \|  3hr          |
-| 18 | Surface downwelling shortwave radiation under clear-sky conditions | W m\-2       | mon \|  3hr          |
-| 19 | TOA downwelling shortwave radiation                                | W m\-2       | mon \|  3hr          |
-| 20 | Surface upwelling shortwave radiation                              | W m\-2       | mon \|  3hr          |
-| 21 | Surface upwelling shortwave radiation under clear-sky conditions   | W m\-2       | mon \|  3hr          |
-| 22 | TOA upwelling shortwave radiation                                  | W m\-2       | mon \|  3hr          |
-| 23 | TOA upwelling shortwave radiation under clear-sky conditions       | W m\-2       | mon \|  3hr          |
-| 24 | Surface (10 m) wind velocity                                       | m s\-1       | mon \|  3hr \|  1 hr |
-| 25 | Surface (2 m) air temperature                                      | K            | mon \|  3hr          |
-| 26 | Surface skin temperature                                           | K            | mon \|  3hr          |
-| 27 | Surface (10 m) zonal wind velocity                                 | m s\-1       | mon \|  3hr          |
-| 28 | Surface (10 m) meridional wind velocity                            | m s\-1       | mon \|  3hr          |
-| 29 | Integrated vapor transport (zonal)                                 | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
-| 30 | Integrated vapor transport (meridional)                            | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
-| 31 | 300 hPa geopotential height                                        | m            | mon \|  3hr \|  1 hr |
-| 32 | 500 hPa geopotential height                                        | m            | mon \|  3hr \|  1 hr |
+| 6  | Surface skin temperature                                           | K            | mon \|  3hr          |
+| 7  | Surface (2 m) air temperature                                      | K            | mon \|  3hr          |
+| 8  | Surface (2 m) relative humidity                                    | %            | mon \|  3hr          |
+| 9  | Surface (2 m) specific humidity                                    | g kg−1       | mon \|  3hr          |
+| 10 | Total column water vapor                                           | kg m\-2      | mon \|  3hr          |
+| 11 | Surface air pressure                                               | Pa           | mon \|  3hr          |
+| 12 | Sea level pressure                                                 | Pa           | mon \|  3hr          |
+| 13 | Surface (10 m) zonal wind speed                                    | m s\-1       | mon \|  3hr          |
+| 14 | Surface (10 m) meridional wind speed                               | m s\-1       | mon \|  3hr          |
+| 15 | Surface (10 m) total wind speed                                    | m s\-1       | mon \|  3hr \|  1 hr |
+| 16 | Integrated vapor transport (zonal)                                 | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
+| 17 | Integrated vapor transport (meridional)                            | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
+| 18 | 300 hPa geopotential height                                        | m            | mon \|  3hr \|  1 hr |
+| 19 | 500 hPa geopotential height                                        | m            | mon \|  3hr \|  1 hr |
+| 20 | Precipitation                                                      | kg m\-2 s\-1 | mon \|  3hr \|  1 hr |
+| 21 | TOA upwelling longwave radiation                                   | W m\-2       | mon \|  3hr \|  1 hr |
+| 22 | TOA upwelling longwave radiation under clear-sky conditions        | W m\-2       | mon \|  3hr          |
+| 23 | Surface downwelling longwave radiation                             | W m\-2       | mon \|  3hr          |
+| 24 | Surface downwelling longwave radiation under clear-sky conditions  | W m\-2       | mon \|  3hr          |
+| 25 | Surface upwelling longwave radiation                               | W m\-2       | mon \|  3hr          |
+| 26 | TOA downwelling shortwave radiation                                | W m\-2       | mon \|  3hr          |
+| 27 | TOA upwelling shortwave radiation                                  | W m\-2       | mon \|  3hr          |
+| 28 | TOA upwelling shortwave radiation under clear-sky conditions       | W m\-2       | mon \|  3hr          |
+| 29 | Surface downwelling shortwave radiation                            | W m\-2       | mon \|  3hr          |
+| 30 | Surface downwelling shortwave radiation under clear-sky conditions | W m\-2       | mon \|  3hr          |
+| 31 | Surface upwelling shortwave radiation                              | W m\-2       | mon \|  3hr          |
+| 32 | Surface upwelling shortwave radiation under clear-sky conditions   | W m\-2       | mon \|  3hr          |
 | 33 | Zonal momentum flux at the surface                                 | N m\-2       | mon \|  3hr          |
 | 34 | Meridional momentum flux at the surface                            | N m\-2       | mon \|  3hr          |
 
 <br/>
 
-We do not request any data on native resolution. Providing COSP simulator output (especially monthly ISCCP simulator cloud fraction histograms) is strongly encouraged from the modeling groups that have implemented it in their simulations.<br/><br/>
+All output is expected to be time-averaged to the requested temporal resolution(s) noted in the tables (not snapshots). We do not request any data on native resolution. Providing COSP simulator output (especially monthly ISCCP simulator cloud fraction histograms) is strongly encouraged from the modeling groups that have implemented it in their simulations. <br/><br/>
 
 ### Additional Information
 * Globus should be used to copy data to NERSC. See instuctions at [this location](https://docs.nersc.gov/services/globus/).
