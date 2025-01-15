@@ -69,17 +69,17 @@ Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.
 |    | Variable Long Name             | Units    | Temporal Resolution |
 | -- | ------------------------------ | -------- | ------------------- |
 | 1  | Cloud fraction                 | fraction | mon \|  3hr         |
-| 2  | Mass fraction of cloud water   | g kg−1   | mon \|  3hr         |
-| 3  | Mass fraction of rain water    | g kg−1   | mon \|  3hr         |
-| 4  | Mass fraction of graupel water | g kg−1   | mon \|  3hr         |
-| 5  | Mass fraction of snow water    | g kg−1   | mon \|  3hr         |
-| 6  | Mass fraction of cloud ice     | g kg−1   | mon \|  3hr         |
-| 7  | Relative humidity              | %        | mon \|  3hr         |
-| 8  | Specific humidity              | g kg−1   | mon \|  3hr         |
+| 2  | Mass fraction of cloud water   | kg kg−1  | mon \|  3hr         |
+| 3  | Mass fraction of rain water    | kg kg−1  | mon \|  3hr         |
+| 4  | Mass fraction of graupel water | kg kg−1  | mon \|  3hr         |
+| 5  | Mass fraction of snow water    | kg kg−1  | mon \|  3hr         |
+| 6  | Mass fraction of cloud ice     | kg kg−1  | mon \|  3hr         |
+| 7  | Relative humidity              | fraction | mon \|  3hr         |
+| 8  | Specific humidity              | kg kg−1  | mon \|  3hr         |
 | 9  | Temperature                    | K        | mon \|  3hr         |
 | 10 | Zonal wind speed               | m s−1    | mon \|  3hr         |
 | 11 | Meridional wind speed          | m s−1    | mon \|  3hr         |
-| 12 | Vertical velocity              | Pa s−1   | mon \|  3hr         |
+| 12 | Vertical wind velocity         | m s−1    | mon \|  3hr         |
 | 13 | Geopotential height            | m        | mon \|  3hr         |
 
 <br/>
@@ -88,15 +88,15 @@ Table 2. 2D output at 0.25˚ horizontal resolution.
 
 |    | Variable Long Name                                                 | Units        | Temporal Resolution  |
 | -- | ------------------------------------------------------------------ | ------------ | -------------------- |
-| 1  | Total cloud cover                                                  | %            | mon \|  3hr          |
+| 1  | Total cloud cover                                                  | fraction     | mon \|  3hr          |
 | 2  | Vertically integrated liquid water                                 | kg m−2       | mon \|  3hr          |
 | 3  | Vertically integrated ice water                                    | kg m−2       | mon \|  3hr          |
 | 4  | Surface upward latent heat flux                                    | W m\-2       | mon \|  3hr          |
 | 5  | Surface upward sensible heat flux                                  | W m\-2       | mon \|  3hr          |
 | 6  | Surface skin temperature                                           | K            | mon \|  3hr          |
 | 7  | Surface (2 m) air temperature                                      | K            | mon \|  3hr          |
-| 8  | Surface (2 m) relative humidity                                    | %            | mon \|  3hr          |
-| 9  | Surface (2 m) specific humidity                                    | g kg−1       | mon \|  3hr          |
+| 8  | Surface (2 m) relative humidity                                    | fraction     | mon \|  3hr          |
+| 9  | Surface (2 m) specific humidity                                    | kg kg−1      | mon \|  3hr          |
 | 10 | Total column water vapor                                           | kg m\-2      | mon \|  3hr          |
 | 11 | Surface air pressure                                               | Pa           | mon \|  3hr          |
 | 12 | Sea level pressure                                                 | Pa           | mon \|  3hr          |
@@ -122,6 +122,7 @@ Table 2. 2D output at 0.25˚ horizontal resolution.
 | 32 | Surface upwelling shortwave radiation under clear-sky conditions   | W m\-2       | mon \|  3hr          |
 | 33 | Zonal momentum flux at the surface                                 | N m\-2       | mon \|  3hr          |
 | 34 | Meridional momentum flux at the surface                            | N m\-2       | mon \|  3hr          |
+| 35 | 500 hPa vertical wind velocity                                     | m s−1        | mon \|  3hr          |
 
 <br/>
 
