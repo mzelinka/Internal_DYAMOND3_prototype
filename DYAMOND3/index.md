@@ -66,21 +66,21 @@ The  0.25˚ horizontal resolution grid to which data should be coarsened is defi
 
 Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.
 
-|    | Variable      | Long Name                       | Units    | Temporal Resolution |
-| -- | ------------- | ------------------------------  | -------- | ------------------- |
-| 1  | cl            | Cloud fraction                  | fraction | mon \|  3hr         |
-| 2  | cldwatmxrat   | Cloud liquid water mixing ratio | kg kg−1  | mon \|  3hr         |
-| 3  | cldicemxrat   | Cloud ice mixing ratio          | kg kg−1  | mon \|  3hr         |
-| 4  | rainmxrat     | Rain mixing ratio               | kg kg−1  | mon \|  3hr         |
-| 5  | grplmxrat     | Graupel mixing ratio            | kg kg−1  | mon \|  3hr         |
-| 6  | snowmxrat     | Snow mixing ratio               | kg kg−1  | mon \|  3hr         |
-| 7  | hur           | Relative humidity               | fraction | mon \|  3hr         |
-| 8  | hus           | Specific humidity               | kg kg−1  | mon \|  3hr         |
-| 9  | ta            | Temperature                     | K        | mon \|  3hr         |
-| 10 | ua            | Eastward wind speed                | m s−1    | mon \|  3hr         |
-| 11 | va            | Northward wind speed           | m s−1    | mon \|  3hr         |
-| 12 | wa            | Upward air velocity             | m s−1    | mon \|  3hr         |
-| 13 | zg            | Geopotential height             | m        | mon \|  3hr         |
+|    | Variable | Long Name                           | Units    | Temporal Resolution |
+| -- | -------- | ----------------------------------  | -------- | ------------------- |
+| 1  | cl       | Cloud fraction                      | fraction | mon \|  3hr         |
+| 2  | clw      | Mass fraction of cloud liquid water | kg kg−1  | mon \|  3hr         |
+| 3  | cli      | Mass fraction of cloud ice water    | kg kg−1  | mon \|  3hr         |
+| 4  | rainfrac | Mass fraction of rain               | kg kg−1  | mon \|  3hr         |
+| 5  | grplfrac | Mass fraction of graupel            | kg kg−1  | mon \|  3hr         |
+| 6  | snowfrac | Mass fraction of snow               | kg kg−1  | mon \|  3hr         |
+| 7  | hur      | Relative humidity                   | fraction | mon \|  3hr         |
+| 8  | hus      | Specific humidity                   | kg kg−1  | mon \|  3hr         |
+| 9  | ta       | Air temperature                     | K        | mon \|  3hr         |
+| 10 | ua       | Eastward wind speed                 | m s−1    | mon \|  3hr         |
+| 11 | va       | Northward wind speed                | m s−1    | mon \|  3hr         |
+| 12 | wa       | Upward air velocity                 | m s−1    | mon \|  3hr         |
+| 13 | zg       | Geopotential height                 | m        | mon \|  3hr         |
 
 <br/>
 
