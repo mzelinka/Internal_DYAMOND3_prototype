@@ -66,63 +66,63 @@ The  0.25˚ horizontal resolution grid to which data should be coarsened is defi
 
 Table 1. 3D Output on standard pressure levels and 0.25˚ horizontal resolution.
 
-|    | Variable Long Name             | Units    | Temporal Resolution |
-| -- | ------------------------------ | -------- | ------------------- |
-| 1  | Cloud fraction                 | fraction | mon \|  3hr         |
-| 2  | Mass fraction of cloud water   | kg kg−1  | mon \|  3hr         |
-| 3  | Mass fraction of rain water    | kg kg−1  | mon \|  3hr         |
-| 4  | Mass fraction of graupel water | kg kg−1  | mon \|  3hr         |
-| 5  | Mass fraction of snow water    | kg kg−1  | mon \|  3hr         |
-| 6  | Mass fraction of cloud ice     | kg kg−1  | mon \|  3hr         |
-| 7  | Relative humidity              | fraction | mon \|  3hr         |
-| 8  | Specific humidity              | kg kg−1  | mon \|  3hr         |
-| 9  | Temperature                    | K        | mon \|  3hr         |
-| 10 | Zonal wind speed               | m s−1    | mon \|  3hr         |
-| 11 | Meridional wind speed          | m s−1    | mon \|  3hr         |
-| 12 | Vertical wind velocity         | m s−1    | mon \|  3hr         |
-| 13 | Geopotential height            | m        | mon \|  3hr         |
+|    | Variable      | Long Name                       | Units    | Temporal Resolution |
+| -- | ------------- | ------------------------------  | -------- | ------------------- |
+| 1  | cl            | Cloud fraction                  | fraction | mon \|  3hr         |
+| 2  | cldwatmxrat   | Cloud liquid water mixing ratio | kg kg−1  | mon \|  3hr         |
+| 3  | cldicemxrat   | Cloud ice mixing ratio          | kg kg−1  | mon \|  3hr         |
+| 4  | rainmxrat     | Rain mixing ratio               | kg kg−1  | mon \|  3hr         |
+| 5  | grplmxrat     | Graupel mixing ratio            | kg kg−1  | mon \|  3hr         |
+| 6  | snowmxrat     | Snow mixing ratio               | kg kg−1  | mon \|  3hr         |
+| 7  | hur           | Relative humidity               | fraction | mon \|  3hr         |
+| 8  | hus           | Specific humidity               | kg kg−1  | mon \|  3hr         |
+| 9  | ta            | Temperature                     | K        | mon \|  3hr         |
+| 10 | ua            | Eastward wind speed                | m s−1    | mon \|  3hr         |
+| 11 | va            | Northward wind speed           | m s−1    | mon \|  3hr         |
+| 12 | wa            | Upward air velocity             | m s−1    | mon \|  3hr         |
+| 13 | zg            | Geopotential height             | m        | mon \|  3hr         |
 
 <br/>
 
 Table 2. 2D output at 0.25˚ horizontal resolution.
 
-|    | Variable Long Name                                                 | Units        | Temporal Resolution  |
-| -- | ------------------------------------------------------------------ | ------------ | -------------------- |
-| 1  | Total cloud cover                                                  | fraction     | mon \|  3hr          |
-| 2  | Vertically integrated liquid water                                 | kg m−2       | mon \|  3hr          |
-| 3  | Vertically integrated ice water                                    | kg m−2       | mon \|  3hr          |
-| 4  | Surface upward latent heat flux                                    | W m\-2       | mon \|  3hr          |
-| 5  | Surface upward sensible heat flux                                  | W m\-2       | mon \|  3hr          |
-| 6  | Surface skin temperature                                           | K            | mon \|  3hr          |
-| 7  | Surface (2 m) air temperature                                      | K            | mon \|  3hr          |
-| 8  | Surface (2 m) relative humidity                                    | fraction     | mon \|  3hr          |
-| 9  | Surface (2 m) specific humidity                                    | kg kg−1      | mon \|  3hr          |
-| 10 | Total column water vapor                                           | kg m\-2      | mon \|  3hr          |
-| 11 | Surface air pressure                                               | Pa           | mon \|  3hr          |
-| 12 | Sea level pressure                                                 | Pa           | mon \|  3hr          |
-| 13 | Surface (10 m) zonal wind speed                                    | m s\-1       | mon \|  3hr          |
-| 14 | Surface (10 m) meridional wind speed                               | m s\-1       | mon \|  3hr          |
-| 15 | Surface (10 m) total wind speed                                    | m s\-1       | mon \|  3hr \|  1 hr |
-| 16 | Integrated vapor transport (zonal)                                 | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
-| 17 | Integrated vapor transport (meridional)                            | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
-| 18 | 300 hPa geopotential height                                        | m            | mon \|  3hr \|  1 hr |
-| 19 | 500 hPa geopotential height                                        | m            | mon \|  3hr \|  1 hr |
-| 20 | Precipitation                                                      | kg m\-2 s\-1 | mon \|  3hr \|  1 hr |
-| 21 | TOA upwelling longwave radiation                                   | W m\-2       | mon \|  3hr \|  1 hr |
-| 22 | TOA upwelling longwave radiation under clear-sky conditions        | W m\-2       | mon \|  3hr          |
-| 23 | Surface downwelling longwave radiation                             | W m\-2       | mon \|  3hr          |
-| 24 | Surface downwelling longwave radiation under clear-sky conditions  | W m\-2       | mon \|  3hr          |
-| 25 | Surface upwelling longwave radiation                               | W m\-2       | mon \|  3hr          |
-| 26 | TOA downwelling shortwave radiation                                | W m\-2       | mon \|  3hr          |
-| 27 | TOA upwelling shortwave radiation                                  | W m\-2       | mon \|  3hr          |
-| 28 | TOA upwelling shortwave radiation under clear-sky conditions       | W m\-2       | mon \|  3hr          |
-| 29 | Surface downwelling shortwave radiation                            | W m\-2       | mon \|  3hr          |
-| 30 | Surface downwelling shortwave radiation under clear-sky conditions | W m\-2       | mon \|  3hr          |
-| 31 | Surface upwelling shortwave radiation                              | W m\-2       | mon \|  3hr          |
-| 32 | Surface upwelling shortwave radiation under clear-sky conditions   | W m\-2       | mon \|  3hr          |
-| 33 | Zonal momentum flux at the surface                                 | N m\-2       | mon \|  3hr          |
-| 34 | Meridional momentum flux at the surface                            | N m\-2       | mon \|  3hr          |
-| 35 | 500 hPa vertical wind velocity                                     | m s−1        | mon \|  3hr          |
+|    | Variable | Long Name                                         | Units        | Temporal Resolution  |
+| -- | -------- | ------------------------------------------------- | ------------ | -------------------- |
+| 1  | clt      | Total cloud cover                                 | fraction     | mon \|  3hr          |
+| 2  | clwvi    | Vertically integrated liquid + ice water          | kg m−2       | mon \|  3hr          |
+| 3  | clivi    | Vertically integrated ice water                   | kg m−2       | mon \|  3hr          |
+| 4  | hfls     | Surface upward latent heat flux                   | W m\-2       | mon \|  3hr          |
+| 5  | hfss     | Surface upward sensible heat flux                 | W m\-2       | mon \|  3hr          |
+| 6  | ts       | Surface skin temperature                          | K            | mon \|  3hr          |
+| 7  | tas      | Surface (2 m) air temperature                     | K            | mon \|  3hr          |
+| 8  | hurs     | Surface (2 m) relative humidity                   | fraction     | mon \|  3hr          |
+| 9  | huss     | Surface (2 m) specific humidity                   | kg kg−1      | mon \|  3hr          |
+| 10 | prw      | Total column water vapor                          | kg m\-2      | mon \|  3hr          |
+| 11 | ps       | Surface air pressure                              | Pa           | mon \|  3hr          |
+| 12 | psl      | Sea level pressure                                | Pa           | mon \|  3hr          |
+| 13 | uas      | Surface (10 m) eastward wind speed                | m s\-1       | mon \|  3hr          |
+| 14 | vas      | Surface (10 m) northward wind speed               | m s\-1       | mon \|  3hr          |
+| 15 | sfcWind  | Surface (10 m) total wind speed                   | m s\-1       | mon \|  3hr \|  1 hr |
+| 16 | uqint    | Eastward integrated vapor transport               | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
+| 17 | vqint    | Northward integrated vapor transport              | kg m\-1 s\-1 | mon \|  3hr \|  1 hr |
+| 18 | zg300    | 300 hPa geopotential height                       | m            | mon \|  3hr \|  1 hr |
+| 19 | zg500    | 500 hPa geopotential height                       | m            | mon \|  3hr \|  1 hr |
+| 20 | pr       | Surface precipitation                             | kg m\-2 s\-1 | mon \|  3hr \|  1 hr |
+| 21 | rlut     | TOA upwelling longwave radiation                  | W m\-2       | mon \|  3hr \|  1 hr |
+| 22 | rlutcs   | TOA upwelling clear-sky longwave radiation        | W m\-2       | mon \|  3hr          |
+| 23 | rlds     | Surface downwelling longwave radiation            | W m\-2       | mon \|  3hr          |
+| 24 | rldscs   | Surface downwelling clear-sky longwave radiation  | W m\-2       | mon \|  3hr          |
+| 25 | rlus     | Surface upwelling longwave radiation              | W m\-2       | mon \|  3hr          |
+| 26 | rsdt     | TOA downwelling shortwave radiation               | W m\-2       | mon \|  3hr          |
+| 27 | rsut     | TOA upwelling shortwave radiation                 | W m\-2       | mon \|  3hr          |
+| 28 | rsutcs   | TOA upwelling clear-sky shortwave radiation       | W m\-2       | mon \|  3hr          |
+| 29 | rsds     | Surface downwelling shortwave radiation           | W m\-2       | mon \|  3hr          |
+| 30 | rsdscs   | Surface downwelling clear-sky shortwave radiation | W m\-2       | mon \|  3hr          |
+| 31 | rsus     | Surface upwelling shortwave radiation             | W m\-2       | mon \|  3hr          |
+| 32 | rsuscs   | Surface upwelling clear-sky shortwave radiation   | W m\-2       | mon \|  3hr          |
+| 33 | tauu     | Surface downward eastward wind stress             | N m\-2       | mon \|  3hr          |
+| 34 | tauv     | Surface downward northward wind stress            | N m\-2       | mon \|  3hr          |
+| 35 | wa500    | 500 hPa upward air velocity                       | m s−1        | mon \|  3hr          |
 
 <br/>
 
