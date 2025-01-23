@@ -43,11 +43,20 @@ Groups should strive to conform to the specified output (in Tables 1-2). Additio
 
 To address several of the primary goals listed above does not generally require high temporal or spatial resolution model output. For example, diagnosing and decomposing radiative feedbacks can be done using offline monthly-resolved radiative kernels at low spatial resolution corresponding to traditional GCMs. Given this, and the desire to facilitate collection of a large collection of model data to be hosted at a central location, we have identified high priority fields that are written at relatively low spatial (0.25 degree) resolution, keeping data volumes relatively small. These data are requested at both monthly and 3-hourly resolution (Tables 1-2), the latter to facilitate examining temperature-mediated changes in cloud organization, submonthly precipitation, convection, synoptic systems, tropical cyclones, etc. Several select 2D fields useful for storm tracking are additionally requested at 1-hourly resolution (Table 2). 
 
-Below, we define standard pressure levels as the 37 pressure levels from ERA5 reanalysis: 1000, 975, 950, 925, 900, 875, 850, 825, 800, 775, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 225, 200, 175, 150, 125, 100, 70, 50, 30, 20, 10, 7, 5, 3, 2, and 1hPa.
-
-The  0.25˚ horizontal resolution grid to which data should be coarsened is defined in [this scrip grid file](https://web.lcrc.anl.gov/public/e3sm/mapping/grids/cmip6_720x1440_scrip.20181001.nc).<br/><br/>
-
-### Data Request
+### Data Format
+- The  0.25˚ horizontal resolution grid to which data should be coarsened is defined in [this scrip grid file](https://web.lcrc.anl.gov/public/e3sm/mapping/grids/cmip6_720x1440_scrip.20181001.nc).
+- 3D data should be regridded to the following 37 pressure levels: 1000, 975, 950, 925, 900, 875, 850, 825, 800, 775, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 225, 200, 175, 150, 125, 100, 70, 50, 30, 20, 10, 7, 5, 3, 2, and 1 hPa.
+- Data is to be provided in NetCDF files conforming to [Climate and Forecast (CF) Metadata Conventions](http://cf-pcmdi.llnl.gov/).
+- For hourly and 3-hourly fields, one file per variable per day is requested.
+- For monthly fields, one file per variable per month is requested.
+- The axes should be named as time, level (for multi level fields), latitude, and longitude.
+- The name of the variable in the NetCDF file should match the variable name provided in Tables 1 and 2.
+- Filenaming convention should be: variable_frequency_experiment_model_time.nc, so precipitation from SCREAM's +4K simulation would be:
+   - Hourly output: pr_hr_SCREAM_p4K_20200301.nc, pr_hr_SCREAM_p4K_20200302.nc, ...
+   - 3-hourly output: pr_3hr_SCREAM_p4K_20200301.nc, pr_3hr_SCREAM_p4K_20200302.nc, ...
+   - Monthly output: pr_mon_SCREAM_p4K_202003.nc, pr_mon_SCREAM_p4K_202004.nc, ...
+ 
+### Output Variables
 <style>
     table {
     font-family: arial, sans-serif;
